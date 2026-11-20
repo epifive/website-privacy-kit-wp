@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EpiFive Website Privacy Kit 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/epifive/website-privacy-kit-wp/issues\n"
+"POT-Creation-Date: 2026-11-20 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: epifive-website-privacy-kit\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"PO-Revision-Date: 2026-11-20 00:00+0000\n"
+"Language-Team: Hindi\n"
+
+#: epifive-website-privacy-kit.php:49
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: blocks/privacy-link/index.js:21
+msgid "Privacy hub link"
+msgstr "प्राइवेसी हब लिंक"
+
+#: blocks/privacy-link/index.js:23
+msgid "Link text"
+msgstr "लिंक का टेक्स्ट"
+
+#: blocks/privacy-link/index.js:25 includes/class-epifive-wpk-frontend.php:107 includes/class-epifive-wpk-frontend.php:185
+msgid "Privacy centre"
+msgstr "प्राइवेसी सेंटर"
+
+#: blocks/privacy-link/index.js:31
+msgid "Add a \"Privacy choices\" link"
+msgstr "\"प्राइवेसी विकल्प\" लिंक जोड़ें"
+
+#: includes/class-epifive-wpk-frontend.php:122 includes/class-epifive-wpk-frontend.php:188
+msgid "Privacy choices"
+msgstr "प्राइवेसी विकल्प"
+
+#: includes/class-epifive-wpk-settings.php:31 includes/class-epifive-wpk-settings.php:32
+msgid "Website Privacy Kit"
+msgstr "वेबसाइट प्राइवेसी किट"
+
+#: includes/class-epifive-wpk-settings.php:53
+msgid "Connection"
+msgstr "कनेक्शन"
+
+#: includes/class-epifive-wpk-settings.php:54
+msgid "Server address"
+msgstr "सर्वर का पता"
+
+#: includes/class-epifive-wpk-settings.php:54
+msgid "Where your Privacy Kit runs, e.g. https://privacy.example.com (self-hosted Free or Pro edition)."
+msgstr "जहाँ आपकी प्राइवेसी किट चलती है, जैसे https://privacy.example.com (सेल्फ़-होस्टेड फ़्री या Pro संस्करण)।"
+
+#: includes/class-epifive-wpk-settings.php:55
+msgid "Site key"
+msgstr "साइट कुंजी"
+
+#: includes/class-epifive-wpk-settings.php:55
+msgid "The public key of this website from Dashboard → Websites in the Privacy Kit (starts with pk_)."
+msgstr "प्राइवेसी किट में डैशबोर्ड → वेबसाइटें से इस वेबसाइट की पब्लिक कुंजी (pk_ से शुरू होती है)।"
+
+#: includes/class-epifive-wpk-settings.php:56
+msgid "Show the consent banner"
+msgstr "सहमति बैनर दिखाएँ"
+
+#: includes/class-epifive-wpk-settings.php:56
+msgid "Loads the banner script on every public page."
+msgstr "हर सार्वजनिक पेज पर बैनर स्क्रिप्ट लोड करता है।"
+
+#: includes/class-epifive-wpk-settings.php:58
+msgid "Scripts that wait for consent"
+msgstr "स्क्रिप्ट जो सहमति का इंतज़ार करती हैं"
+
+#: includes/class-epifive-wpk-settings.php:59
+msgid "Google Consent Mode v2 defaults"
+msgstr "Google Consent Mode v2 डिफ़ॉल्ट"
+
+#: includes/class-epifive-wpk-settings.php:59
+msgid "Prints \"denied\" defaults for ads and analytics storage at the top of the page, before any Google tag. The banner updates them after a choice."
+msgstr "पेज में सबसे ऊपर, किसी भी Google टैग से पहले, विज्ञापन और एनालिटिक्स स्टोरेज के लिए \"denied\" डिफ़ॉल्ट लिखता है। चुनाव के बाद बैनर इन्हें अपडेट करता है।"
+
+#: includes/class-epifive-wpk-settings.php:60
+msgid "Gated script handles"
+msgstr "रोकी गई स्क्रिप्ट हैंडल"
+
+#: includes/class-epifive-wpk-settings.php:60
+msgid "One per line: script-handle=purpose_key, e.g. google-analytics=analytics. These enqueued scripts run only after the visitor agrees to that purpose."
+msgstr "हर लाइन में एक: script-handle=purpose_key, जैसे google-analytics=analytics। ये स्क्रिप्ट तभी चलती हैं जब विज़िटर उस उद्देश्य के लिए सहमति दे।"
+
+#: includes/class-epifive-wpk-settings.php:62
+msgid "Privacy hub"
+msgstr "प्राइवेसी हब"
+
+#: includes/class-epifive-wpk-settings.php:63
+msgid "Privacy hub address"
+msgstr "प्राइवेसी हब का पता"
+
+#: includes/class-epifive-wpk-settings.php:63
+msgid "Optional. Leave empty to use the hub of this site key (found automatically)."
+msgstr "वैकल्पिक। इस साइट कुंजी का हब इस्तेमाल करने के लिए खाली छोड़ें (अपने-आप मिल जाता है)।"
+
+#: includes/class-epifive-wpk-settings.php:65
+msgid "Form consent checkboxes"
+msgstr "फ़ॉर्म सहमति चेकबॉक्स"
+
+#: includes/class-epifive-wpk-settings.php:66
+msgid "Contact Form 7: purposes"
+msgstr "Contact Form 7: उद्देश्य"
+
+#: includes/class-epifive-wpk-settings.php:66
+msgid "Comma-separated purpose keys added to every Contact Form 7 form, e.g. marketing_email. Leave empty and use the [wpk_consent] form tag per form instead."
+msgstr "हर Contact Form 7 फ़ॉर्म में जोड़ी जाने वाली उद्देश्य कुंजियाँ, कॉमा से अलग, जैसे marketing_email। खाली छोड़ें और इसके बजाय हर फ़ॉर्म में [wpk_consent] फ़ॉर्म टैग इस्तेमाल करें।"
+
+#: includes/class-epifive-wpk-settings.php:67
+msgid "Contact Form 7: email field"
+msgstr "Contact Form 7: ईमेल फ़ील्ड"
+
+#: includes/class-epifive-wpk-settings.php:67
+msgid "Name of the email field, usually your-email."
+msgstr "ईमेल फ़ील्ड का नाम, आमतौर पर your-email।"
+
+#: includes/class-epifive-wpk-settings.php:68
+msgid "WPForms: purposes"
+msgstr "WPForms: उद्देश्य"
+
+#: includes/class-epifive-wpk-settings.php:68
+msgid "Comma-separated purpose keys added to every WPForms form. Leave empty for none."
+msgstr "हर WPForms फ़ॉर्म में जोड़ी जाने वाली उद्देश्य कुंजियाँ, कॉमा से अलग। किसी के लिए नहीं, तो खाली छोड़ें।"
+
+#: includes/class-epifive-wpk-settings.php:69
+msgid "WPForms: email field name"
+msgstr "WPForms: ईमेल फ़ील्ड का नाम"
+
+#: includes/class-epifive-wpk-settings.php:69
+msgid "The name attribute of the email input, e.g. wpforms[fields][1]. Leave empty to use the first email input of the form."
+msgstr "ईमेल इनपुट का name एट्रिब्यूट, जैसे wpforms[fields][1]। फ़ॉर्म का पहला ईमेल इनपुट इस्तेमाल करने के लिए खाली छोड़ें।"
+
+#: includes/class-epifive-wpk-settings.php:131
+msgid "Use an https:// server address (plain http only works for localhost)."
+msgstr "https:// वाला सर्वर पता इस्तेमाल करें (सादा http सिर्फ़ localhost के लिए चलता है)।"
+
+#: includes/class-epifive-wpk-settings.php:138
+msgid "The site key looks wrong. Copy it from Dashboard → Websites (it starts with pk_)."
+msgstr "साइट कुंजी गलत लगती है। इसे डैशबोर्ड → वेबसाइटें से कॉपी करें (यह pk_ से शुरू होती है)।"
+
+#: includes/class-epifive-wpk-settings.php:168
+msgid "Install the Privacy Kit on your own server (Free or Pro edition), add this website under Dashboard → Websites, then paste the address and the site key here."
+msgstr "प्राइवेसी किट अपने सर्वर पर इंस्टॉल करें (फ़्री या Pro संस्करण), डैशबोर्ड → वेबसाइटें में यह वेबसाइट जोड़ें, फिर यहाँ पता और साइट कुंजी चिपकाएँ।"
+
+#: includes/class-epifive-wpk-settings.php:175
+msgid "Scripts added in a theme or another plugin can also wait for consent: give them type=\"text/plain\" and data-wpk-purpose=\"analytics\" (the purpose key from your dashboard)."
+msgstr "थीम या किसी दूसरे प्लगइन में जोड़ी गई स्क्रिप्ट भी सहमति का इंतज़ार कर सकती हैं: उन्हें type=\"text/plain\" और data-wpk-purpose=\"analytics\" दें (आपके डैशबोर्ड की उद्देश्य कुंजी)।"
+
+#: includes/class-epifive-wpk-settings.php:182
+msgid "Use the [wpk_privacy_link] and [wpk_privacy_choices] shortcodes or the \"Privacy hub link\" block, for example in the footer."
+msgstr "[wpk_privacy_link] और [wpk_privacy_choices] शॉर्टकोड या \"प्राइवेसी हब लिंक\" ब्लॉक इस्तेमाल करें, जैसे फ़ुटर में।"
+
+#: includes/class-epifive-wpk-settings.php:189
+msgid "Adds unticked consent checkboxes with the notice link above the submit button, and records each choice with the email address in the consent log. In any form you can also place the [wpk_form_consent purposes=\"marketing_email\" field=\"email\"] shortcode."
+msgstr "सबमिट बटन के ऊपर नोटिस लिंक के साथ बिना टिक वाले सहमति चेकबॉक्स जोड़ता है, और हर चुनाव को ईमेल पते के साथ सहमति लॉग में दर्ज करता है। किसी भी फ़ॉर्म में आप [wpk_form_consent purposes=\"marketing_email\" field=\"email\"] शॉर्टकोड भी लगा सकते हैं।"
+
+#: includes/class-epifive-wpk-settings.php:202 epifive-website-privacy-kit.php:3
+msgid "EpiFive Website Privacy Kit"
+msgstr "EpiFive वेबसाइट प्राइवेसी किट"
+
+#: includes/class-epifive-wpk-settings.php:203
+msgid "This plugin helps you organise DPDP tasks on your website. It is not legal advice and does not make your site compliant on its own. You remain the Data Fiduciary. The Privacy Kit is not a Consent Manager registered with the Data Protection Board of India."
+msgstr "यह प्लगइन आपकी वेबसाइट पर DPDP से जुड़े कामों को व्यवस्थित करने में मदद करता है। यह कानूनी सलाह नहीं है और अपने-आप आपकी साइट को अनुपालक नहीं बनाता। डेटा फ़िड्यूशियरी आप ही रहते हैं। प्राइवेसी किट भारतीय डेटा संरक्षण बोर्ड में पंजीकृत कंसेंट मैनेजर नहीं है।"
+
+#: includes/class-epifive-wpk-settings.php:205
+msgid "Connected: the server answered with this site's banner settings."
+msgstr "कनेक्ट हो गया: सर्वर ने इस साइट की बैनर सेटिंग्स भेजीं।"
+
+#: includes/class-epifive-wpk-settings.php:207
+msgid "Could not read the banner settings. Check the server address, the site key and that a notice is published."
+msgstr "बैनर सेटिंग्स नहीं पढ़ी जा सकीं। सर्वर का पता, साइट कुंजी और यह जाँचें कि नोटिस प्रकाशित है।"
+
+#: includes/class-epifive-wpk-settings.php:219
+msgid "Test connection"
+msgstr "कनेक्शन जाँचें"
+
+#: includes/class-epifive-wpk-settings.php:230
+msgid "You are not allowed to do this."
+msgstr "आपको यह करने की अनुमति नहीं है।"

@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "epifive-wpk/privacy-link",
+	"version": "1.0.0",
+	"title": "Privacy hub link",
+	"category": "widgets",
+	"icon": "shield",
+	"description": "Link to your privacy hub (notice, your rights, withdraw consent), with an optional \"Privacy choices\" link that reopens the consent banner.",
+	"keywords": [ "privacy", "consent", "DPDP" ],
+	"textdomain": "epifive-website-privacy-kit",
+	"attributes": {
+		"text": { "type": "string", "default": "" },
+		"showChoices": { "type": "boolean", "default": true }
+	},
+	"supports": { "html": false, "align": true, "typography": { "fontSize": true }, "color": { "text": true, "link": true } },
+	"editorScript": "file:./index.js"
+}

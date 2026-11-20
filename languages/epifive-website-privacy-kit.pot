@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EpiFive Website Privacy Kit 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/epifive/website-privacy-kit-wp/issues\n"
+"POT-Creation-Date: 2026-11-20 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: epifive-website-privacy-kit\n"
+
+#: epifive-website-privacy-kit.php:49
+msgid "Settings"
+msgstr ""
+
+#: blocks/privacy-link/index.js:21
+msgid "Privacy hub link"
+msgstr ""
+
+#: blocks/privacy-link/index.js:23
+msgid "Link text"
+msgstr ""
+
+#: blocks/privacy-link/index.js:25 includes/class-epifive-wpk-frontend.php:107 includes/class-epifive-wpk-frontend.php:185
+msgid "Privacy centre"
+msgstr ""
+
+#: blocks/privacy-link/index.js:31
+msgid "Add a \"Privacy choices\" link"
+msgstr ""
+
+#: includes/class-epifive-wpk-frontend.php:122 includes/class-epifive-wpk-frontend.php:188
+msgid "Privacy choices"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:31 includes/class-epifive-wpk-settings.php:32
+msgid "Website Privacy Kit"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:53
+msgid "Connection"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:54
+msgid "Server address"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:54
+msgid "Where your Privacy Kit runs, e.g. https://privacy.example.com (self-hosted Free or Pro edition)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:55
+msgid "Site key"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:55
+msgid "The public key of this website from Dashboard → Websites in the Privacy Kit (starts with pk_)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:56
+msgid "Show the consent banner"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:56
+msgid "Loads the banner script on every public page."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:58
+msgid "Scripts that wait for consent"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:59
+msgid "Google Consent Mode v2 defaults"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:59
+msgid "Prints \"denied\" defaults for ads and analytics storage at the top of the page, before any Google tag. The banner updates them after a choice."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:60
+msgid "Gated script handles"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:60
+msgid "One per line: script-handle=purpose_key, e.g. google-analytics=analytics. These enqueued scripts run only after the visitor agrees to that purpose."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:62
+msgid "Privacy hub"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:63
+msgid "Privacy hub address"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:63
+msgid "Optional. Leave empty to use the hub of this site key (found automatically)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:65
+msgid "Form consent checkboxes"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:66
+msgid "Contact Form 7: purposes"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:66
+msgid "Comma-separated purpose keys added to every Contact Form 7 form, e.g. marketing_email. Leave empty and use the [wpk_consent] form tag per form instead."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:67
+msgid "Contact Form 7: email field"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:67
+msgid "Name of the email field, usually your-email."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:68
+msgid "WPForms: purposes"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:68
+msgid "Comma-separated purpose keys added to every WPForms form. Leave empty for none."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:69
+msgid "WPForms: email field name"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:69
+msgid "The name attribute of the email input, e.g. wpforms[fields][1]. Leave empty to use the first email input of the form."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:131
+msgid "Use an https:// server address (plain http only works for localhost)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:138
+msgid "The site key looks wrong. Copy it from Dashboard → Websites (it starts with pk_)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:168
+msgid "Install the Privacy Kit on your own server (Free or Pro edition), add this website under Dashboard → Websites, then paste the address and the site key here."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:175
+msgid "Scripts added in a theme or another plugin can also wait for consent: give them type=\"text/plain\" and data-wpk-purpose=\"analytics\" (the purpose key from your dashboard)."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:182
+msgid "Use the [wpk_privacy_link] and [wpk_privacy_choices] shortcodes or the \"Privacy hub link\" block, for example in the footer."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:189
+msgid "Adds unticked consent checkboxes with the notice link above the submit button, and records each choice with the email address in the consent log. In any form you can also place the [wpk_form_consent purposes=\"marketing_email\" field=\"email\"] shortcode."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:202 epifive-website-privacy-kit.php:3
+msgid "EpiFive Website Privacy Kit"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:203
+msgid "This plugin helps you organise DPDP tasks on your website. It is not legal advice and does not make your site compliant on its own. You remain the Data Fiduciary. The Privacy Kit is not a Consent Manager registered with the Data Protection Board of India."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:205
+msgid "Connected: the server answered with this site's banner settings."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:207
+msgid "Could not read the banner settings. Check the server address, the site key and that a notice is published."
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:219
+msgid "Test connection"
+msgstr ""
+
+#: includes/class-epifive-wpk-settings.php:230
+msgid "You are not allowed to do this."
+msgstr ""
