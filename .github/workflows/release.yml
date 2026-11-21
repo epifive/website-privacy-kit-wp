@@ -1,0 +1,39 @@
+# Pushing a tag like v1.2.3 builds the release assets and publishes a GitHub release.
+# Builds the source zip and the installable WordPress plugin zip. Edit the release notes on GitHub afterwards if needed.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      NAME: ${{ github.event.repository.name }}-${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source zip
+        run: |
+          mkdir -p dist
+          git archive --format=zip --prefix="$NAME/" -o "dist/$NAME.zip" "$GITHUB_REF_NAME"
+      - name: WordPress plugin zip
+        run: |
+          version="$(sed -n 's/^ \* Version: *//p' epifive-website-privacy-kit.php | tr -d '[:space:]')"
+          [ "v$version" = "$GITHUB_REF_NAME" ] || { echo "Plugin header Version $version does not match tag $GITHUB_REF_NAME"; exit 1; }
+          mkdir -p build/epifive-website-privacy-kit
+          git archive "$GITHUB_REF_NAME" | tar -x -C build/epifive-website-privacy-kit
+          rm -rf build/epifive-website-privacy-kit/.wordpress-org build/epifive-website-privacy-kit/.github build/epifive-website-privacy-kit/.git*
+          cd build && zip -qr "../dist/epifive-website-privacy-kit-wordpress-$GITHUB_REF_NAME.zip" epifive-website-privacy-kit
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/* --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/* --title "${{ github.event.repository.name }} $GITHUB_REF_NAME" --generate-notes --verify-tag
+          fi
